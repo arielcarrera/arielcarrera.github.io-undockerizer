@@ -1,4 +1,4 @@
-# Welcome to Undockerizer
+# Undockerizer
 
 Undockerizer is a tool that helps to create an installer (script) from a Docker image.
 
