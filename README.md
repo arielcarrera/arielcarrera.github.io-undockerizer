@@ -4,30 +4,6 @@
 ## Issue tracker: 
 - [Github issues](https://github.com/undockerizer/undockerizer/issues)
 
-## Build
-
-### System Requirements
-1. Java Jdk 8 or later
-2. Maven 3.6.3 or later
-3. optional: Graalvm 20.1.0 or later
-4. Docker 19 or later
-5. Checkout project
-
-### Build jar:
-Command line:
-> mvn clean install
-
-## Build native image:
-Command line:
-1. run:
-> cd docker-graalvm
-2. select centos, ubuntu or your custom image:
-> cd centos
-3. run once:
-> docker-build.bat
-4. compile a native image release:
-> docker-compile.bat
-
 ## Usage:
 
 Please note that interactive mode and compressed mode (tar.gz) are the suggested modes of use.
@@ -98,6 +74,30 @@ Command line:
 
 5. Run:
 > ./$UNDOCKERIZER_FILE.sh
+
+## Build
+
+### System Requirements
+1. Java Jdk 8 or later
+2. Maven 3.6.3 or later
+3. optional: Graalvm 20.1.0 or later
+4. Docker 19 or later
+5. Checkout project
+
+### Build jar:
+Command line:
+> mvn clean install
+
+## Build native image:
+Command line:
+1. run:
+> cd docker-graalvm
+2. select centos, ubuntu or your custom image:
+> cd centos
+3. run once:
+> docker-build.bat
+4. compile a native image release:
+> docker-compile.bat
 
 # Note
 
