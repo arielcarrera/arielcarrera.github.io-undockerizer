@@ -9,7 +9,7 @@
 Please note that interactive mode and compressed mode (tar.gz) are the suggested modes of use.
 
 ### Command line parameters:
-´´´
+```
 Usage: Undockerizer [-cftv] [-de] [-fp] [-it] -i=<image> [-o=<outputfileStr>]
                     [-od=<outputDirPathStr>] [-sp=<shellPathStr>]
   -c, --cleanAll         Clean all temp data
@@ -34,7 +34,7 @@ Usage: Undockerizer [-cftv] [-de] [-fp] [-it] -i=<image> [-o=<outputfileStr>]
   -t, --tar              Create tar file.
                            Default: false
   -v, --verbose          Verbose mode.
-´´´
+```
 
 ### Run with JDK
 Prerequisites:
