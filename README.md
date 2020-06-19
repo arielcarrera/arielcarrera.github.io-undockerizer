@@ -1,7 +1,3 @@
-# Undockerizer
-
-Undockerizer is a tool that helps to create an installer (script) from a Docker image.
-
 ## Issue tracker: 
 - [github](https://github.com/arielcarrera/undockerizer/issues)
 
