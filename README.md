@@ -41,16 +41,22 @@ Prerequisites:
 - JDK and Docker is required.
 
 Command line:
-> java -jar ./target/undockerizer.jar [PARAMETERS]
+```
+java -jar ./target/undockerizer.jar [PARAMETERS]
+```
 
 ### Run native
 Prerequisites:
 - Docker is required.
 
 Command line:
-> undockerizer-centos [PARAMETERS]
+```
+undockerizer-centos [PARAMETERS]
+```
 or
-> undockerizer-ubuntu [PARAMETERS]
+```
+undockerizer-ubuntu [PARAMETERS]
+```
 
 
 ## How to Try an undockerizer script?
@@ -60,20 +66,30 @@ Prerequisites:
 
 Command line:
 1. Run a docker image with same base than your undockerized image (e.g. Centos 7) and mount your undockerizer tar.gz file (or your undockerizer target folder). For example.
-> docker run -it -v ${WORKDIR}\undockerizer\undockerizer\:/home/undockerizer centos:7 /bin/bash
+```
+docker run -it -v ${WORKDIR}\undockerizer\undockerizer\:/home/undockerizer centos:7 /bin/bash
+```
 
 2. Untar file:
-> cd /home/undockerizer
-> tar -xvz $UNDOCKERIZER_FILE.tar.gz
+```
+cd /home/undockerizer
+tar -xvz $UNDOCKERIZER_FILE.tar.gz
+```
 
 3. Add execution attribute:
-> chmod +x $UNDOCKERIZER_FILE.sh
+```
+chmod +x $UNDOCKERIZER_FILE.sh
+```
 
 4. Install sudo:
-> yum install sudo -y
+```
+yum install sudo -y
+```
 
 5. Run:
-> ./$UNDOCKERIZER_FILE.sh
+```
+./$UNDOCKERIZER_FILE.sh
+```
 
 ## Build
 
@@ -86,18 +102,31 @@ Command line:
 
 ### Build jar:
 Command line:
-> mvn clean install
+```
+mvn clean install
+```
 
 ## Build native image:
 Command line:
 1. run:
-> cd docker-graalvm
+```
+cd docker-graalvm
+```
+
 2. select centos, ubuntu or your custom image:
-> cd centos
+```
+cd centos
+```
+
 3. run once:
-> docker-build.bat
+```
+docker-build.bat
+```
+
 4. compile a native image release:
-> docker-compile.bat
+```
+docker-compile.bat
+```
 
 # Note
 
